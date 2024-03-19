@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Shark Cave Inn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Hotel.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span><h3>Shark Cave Inn</h3> </span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU<i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>ENJOY A LUXARY BEACH GET-AWAY WITH UNIQUELY DESIGNED ROOMS AND SUITES!!!</h2>
+                <p>At this of the best urban hotel and resort destinations in the world, enjoy world-class service in the midst of a calm atmosphere with inspiring designs and transformative experiences.</p>
+                <button type = "button" class = "head-btn">GET STARTED</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h5>services</h5>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Restaurant</h2>
+                        <p>Comprising the very best restaurants in Colombo, We offer grandeur extravagance & and unparalleled dining experiences. Serving exotic dishes from around the world, you will be spoilt for choice. Embark on a culinary adventure whether you wish to savour local delights at Harbour Court or taste the wonders of the sea at The Ocean Seafood Restaurant. Always delighted to cater to your individual needs, we will be glad to customise our menus to your unique preferences.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class="fas fa-cocktail"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Bar</h2>
+                        <p>Blue Lounge is Our chique rooftop bar. Boasting views of the city and coastline below, Blue Lounge offers curated entertainment that changes as the night progresses to suit the mood. Additionally, an impressive A la carte Tapas menu and a number of cocktails carefully crafted by our in-house mixologists, offer guests just the right atmosphere to wind down and enjoy the night.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Cleanliness is one of the main factors that can influence a guest’s opinion of your hotel and whether they decide to revisit in the future. At Hotel Cleaning Services, our skilled cleaning staff is committed to ensuring your guests have an optimal experience when they stay at your hotel.Decades of Experience in Hospitality
+                            Over 30 years of experience cleaning luxury hotels and resorts has given our company time to perfect our techniques. We guarantee you and your guests will be impressed by the level of cleanliness and professionalism we bring to your property. You no longer have to worry about your public spaces and back of house spaces being clean, sanitized, and ready for work every morning.
+                            Highly-Trained Staff
+                            We perform a thorough vetting process for all staff members. Our team conducts background checks, reference checks, and comprehensive interviews. You can trust that our staff will be well-suited for your property.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>There are many different approaches to ensure protection for hotel staff and guests while delivering positive guest experiences at the same time, and in fact, many security systems, procedures, and technologies can be implemented subtly and without dramatically overhauling the structure or ambience of the building.Alongside regular maintenance and the intelligent use of space, technology has a large part to place in hotel security procedures. Modern security systems are discreet and can help improve guest experience while supporting security officers. Video surveillance, digital key cards, and hotel panic buttons are three ways to achieve this.
+                            Gas safety is another important consideration, similar to your electricity supply. Your business gas supply and associated appliances should be periodically checked. It's a good idea to arrange annual gas safety checks for any appliances that are serving guest accommodation, even if it’s sited away from the guests’ rooms. </p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h5>rooms</h5>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "https://nucleusimagery.blob.core.windows.net/live/a34f1f86-59c1-455f-ac09-1e491eb8cf51" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>SUPERIOR ROOM</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Stunning Views.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Spacious Luxury.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Comfort-Oriented.
+                            </li>
+                        </ul>
+                        <p>Our Superior Rooms are a soothing blend of contemporary luxury & chic allure. Relax & melt into king-sized beds fitted with signature Sealy mattresses that are the very essence of comfort, enjoy a movie with loved ones on the 40-inch LCD TV & treat yourself with delicious meals from our 24-hour in-room dining menu.Our Superior Rooms provide panoramas of the dazzling coast as well!</p>
+                       
+                        <p class = "rate">
+                            <span>19,900/-</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "https://www.grandeeza.com/wp-content/themes/grandeeza-theme/images/rooms/superior-room-slider2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text"><br>
+                        <h3>DELUXE ROOM</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Breath-taking Views
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Luxurious Escape.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Spacious Living.
+                            </li>
+                        </ul>
+                        <p>Perched on the fifth to seventh floors of our regal hotel, the Deluxe Rooms are adorned with soft, soothing earthy tones, offering stress-free relaxation. During your stay, enjoy all the luxuries of a spacious, white marble bathroom, wonderfully soft bedding, cityscape views, as well as, fantastic services & amenities that cater to your every need.</p>
+                       <br>
+                        <p class = "rate">
+                            <span>34,900/-</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "https://images.luxuryhotel.guru/hotelimage.php?p_id=1&code=3caff355d6edbc6a358f6d1ac152b928&webpage=amazing-hotel-suites.com&link=https%3A%2F%2Fsubdomain.cloudimg.io%2Fcrop%2F512x384%2Fq70.fcontrast10.fbright0.fsharp5%2Fhttps%3A%2F%2Fq-xx.bstatic.com%2Fxdata%2Fimages%2Fhotel%2Fmax1536%2F163569932.jpg%3Fk%3Dd8df707b9c116a9b0c32f297368965541fe24bf885ddd68d908ab7729ff7889d%26o%3D" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>PREMIUM ROOM</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                5 star amenities.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lavish Comforts.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Stunning Views.
+                            </li>
+                        </ul>
+                        <p>Masterfully designed to bring you exceptional luxuries & comforts, our seven premium rooms promise an idyllic stay. Delight in the very best of services & amenities, enjoy heavenly in-room meals, indulge in complimentary BVLGARI cosmetics & experience the richness of Frette linen; let us celebrate you as you enjoy our paradise island.</p>
+                        
+                        <p class = "rate">
+                            <span>55,900/-</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+       
+        <section class = "customers" id = "customers">
+            <div class = "customers-container"></div>
+            <div class="slideshow-container">
+                
+                <div class = "title">
+                    <h5>customers</h5>
+                </div>
+                
+                <div class="mySlides fade">
+                   
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>The best hotel i've ever been privileged enough to saty at. Gorgeous building and a picturesque surrounding that only gets more breathtaking when you walk in</p>
+                        <img src = "tasheema.jpg" alt = "customer image">
+                        <span>Tasheema Sewwandini</span>
+                    </div>
+                 </div>
+                
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class="mySlides fade">
+                        
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3> Nice Place</h3>
+                        <p>The rooms were clean, very comfortable, and the staff was amazing. They all go above and beyond to make your stay comfortable</p><br><br>
+                        <img src = "amanda.jpg" alt = "customer image">
+                        <span>Amanda Serasinghe</span>
+                    </div>
+                </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class="mySlides fade">
+                       
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Loving Experience</h3>
+                        <p> I have stayed at many hotels in Colombo. This was on the top of the list of best experiences ever. Staff was great and they were there for every need of my family. Great place to stay with your family and we loved it!</p>
+                        <img src = "amandi.jpg" alt = "customer image">
+                        <span>Amandi Jayawardene</span>
+                    </div>
+                </div>
+                    <!-- end of single customer -->
+                    <div class="mySlides fade">
+                        
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Great hospitality</h3>
+                        <p>Food was excellent and the hospitality was outstanding.Highly recommended and great service and a great staff.</p><br><br>
+                        <img src = "hiruna.jpg" alt = "customer image">
+                        <span>Hiruna Kehan</span>
+                    </div>
+                </div>
+                     <!-- end of single customer -->
+                     <div class="mySlides fade" >
+                        
+                     <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3> Beautiful View</h3>
+                        <p>Great value with clean and comfortable rooms.The staff at this property are all great! Beautiful view,lovely ambiance and superb food with excellent hospitality!!!</p><br><br>
+                        <img src = "nadun.jpg" alt = "customer image">
+                        <span>Nadun Abhishek</span>
+                    </div>
+                </div>
+                </div>
+           
+               
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div><br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+                  
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>South Asia’s leading Grande Dame, the Shark Cave Inn is testimony to both Sri Lanka’s colonial past and its independent present. Celebrated within the hospitality world, it blends historical splendour with crafted modernity to form a new model for heritage properties. International guests are immersed in the Shark Cave Inn’s rich traditions and compelling stories, ..</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            345/7 Colombo - Galle Main Rd, Colombo 3 
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +947654343219
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            sharkcaveinn432@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
