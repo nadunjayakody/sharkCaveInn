@@ -1,2 +1,2 @@
 # sharkCaveInn
-Simple website for a hotel
+ Website for a hotel
